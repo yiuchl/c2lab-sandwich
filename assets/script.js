@@ -23,6 +23,23 @@ function renderItems(collection) {
 			    `
             listItem.insertAdjacentHTML('beforeend', itemDetails)
             collectionList.appendChild(listItem)
+
+            if (item.Conversation) {
+                listItem.classList.add("convo")
+            }
+
+            if (item.Conversation == "A") {
+                // If this is `true`
+                listItem.classList.add("convoStatusA");
+            }
+            if (item.Conversation == "B") {
+                // If this is `true`
+                listItem.classList.add("convoStatusB");
+            }
+            if (item.Conversation == "Individual") {
+                // If this is `true`
+                listItem.classList.add("convoStatusInd");
+            }
         });
 }
 
@@ -37,7 +54,7 @@ fetch("./assets/data.json")
     });
 
 
-// THE THREE REQUIRED JAVASCRIPT ELEMENTS:
+// JAVASCRIPT ELEMENTS:
 //      1. the footer changes based on the current month/year
 //      2. when the ids in the nav are clicked, descriptions appear
 //      3. stickers (circle, star)
@@ -72,8 +89,6 @@ $("#thx").click(function () {
     $("#thanks").toggle();
 });
 
-// WANT TO FILTER BY CONVERSATION
-// since i do not know how to filter, here are stickers :')
 // DRAGGABLE DIVS
 // CIRCLE STICKER
 var e;
@@ -179,4 +194,3 @@ $('button').click(function () {
     let randomColor = myColors[Math.trunc(Math.random() * myColors.length)];
     $('p').css('color', randomColor);
 });
-
