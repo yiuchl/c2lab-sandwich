@@ -163,7 +163,6 @@ body {
   border-right: 0;
   text-align: left;
   border-top-style: none;
-
 }
 
 #about {
@@ -430,6 +429,16 @@ h1 {
   .circle{
     display: none;
   }
+
+  #burst-12 {
+    top: 1%;
+    left: 75%;
+    position: absolute;
+  }
+
+  #bursty{
+    display:flex;
+  }
 }
 
 @media screen and (max-width:480px) {
@@ -464,6 +473,8 @@ h1 {
     top: 0.65%;
     /* top: 97%; */
     left: 73%;
+    /* top: 33%;
+    left: 71%; */
     width: 83px;
     height: 83px;
     transform: rotate(20deg);
@@ -471,8 +482,7 @@ h1 {
   }
 
   #bursty{
-    position: relative;
-    z-index: 20;
+    display:flex;
   }
 
   #burst-12:before,
