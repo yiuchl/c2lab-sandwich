@@ -188,6 +188,16 @@ body {
 #thx {
   font-size: 3em;
   font-family: 'Cooper Black', Arial, Helvetica, sans-serif;
+  background: linear-gradient(130deg, mediumblue, green, greenyellow, gold, orange, orangered, red, purple, indigo, mediumslateblue, mediumspringgreen);
+  color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+
+#thx:hover {
+  color: transparent;
+  transition: 500ms ease-in-out;
 }
 
 #why,
@@ -257,6 +267,10 @@ h1 {
   z-index: 19;
 }
 
+.circle:hover {
+  transform: rotate(-340deg);
+  transition: 1000ms linear;
+}
 
 #burst-12 {
   background: red;
