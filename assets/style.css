@@ -472,6 +472,7 @@ h1 {
 
   #bursty{
     position: relative;
+    z-index: 20;
   }
 
   #burst-12:before,
