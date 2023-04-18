@@ -435,10 +435,6 @@ h1 {
     left: 75%;
     position: absolute;
   }
-
-  #bursty{
-    display:flex;
-  }
 }
 
 @media screen and (max-width:480px) {
@@ -479,10 +475,6 @@ h1 {
     height: 83px;
     transform: rotate(20deg);
     position: absolute;
-  }
-
-  #bursty{
-    display:flex;
   }
 
   #burst-12:before,
@@ -535,9 +527,6 @@ h1 {
   }
 
   .circle {
-    display: none;
-  }
-  .circle-text {
     display: none;
   }
   
