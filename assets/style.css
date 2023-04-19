@@ -118,7 +118,7 @@ body {
   padding: 2.2rem;
   object-fit: contain;
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .column-1 {
@@ -432,6 +432,10 @@ h1 {
 @media screen and (max-width:680px) {
   .circle {
     display: none;
+  }
+
+  .container{
+      font-size: 1.2rem;
   }
 }
 
