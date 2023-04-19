@@ -414,7 +414,8 @@ h1 {
 
   #why,
   #thanks,
-  #ask {
+  #ask,
+  .ask {
     display: none;
     cursor: pointer;
   }
@@ -538,7 +539,8 @@ h1 {
 
   #why,
   #thanks,
-  #ask {
+  #ask,
+  .ask {
     display: none;
     cursor: pointer;
   }
