@@ -88,6 +88,12 @@ $("#more").click(function () {
 $("#thx").click(function () {
     $("#thanks").toggle();
 });
+$("#head").click(function () {
+    $("#ask").toggle();
+});
+$("#ask").click(function () {
+    $("#ask").toggle();
+});
 
 // DRAGGABLE DIVS
 // CIRCLE STICKER

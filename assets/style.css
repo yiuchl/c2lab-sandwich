@@ -206,8 +206,24 @@ body {
 }
 
 #more {
-  display: flex;
+  display: none;
+  /* display: flex; */
   cursor: pointer;
+}
+
+#ask {
+  display: grid;
+
+  font-family: 'Cooper Black', Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: white;
+  padding: 5%;
+  text-align: center;
+  font-size: 2rem;
+  border: 0.5em solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
 .bolded {
@@ -395,10 +411,23 @@ h1 {
     /* top: 3.3%;
     left: 86%; */
   }
+
+  #why,
+  #thanks,
+  #ask {
+    display: none;
+    cursor: pointer;
+  }
+
+  #more {
+    display: flex;
+    cursor: pointer;
+  }
+
 }
 
-@media screen and (max-width:680px){
-  .circle{
+@media screen and (max-width:680px) {
+  .circle {
     display: none;
   }
 }
@@ -426,7 +455,7 @@ h1 {
     grid-column-start: 1;
   }
 
-  .circle{
+  .circle {
     display: none;
   }
 
@@ -508,7 +537,8 @@ h1 {
   }
 
   #why,
-  #thanks {
+  #thanks,
+  #ask {
     display: none;
     cursor: pointer;
   }
@@ -517,7 +547,7 @@ h1 {
     display: flex;
     cursor: pointer;
   }
-  
+
   .name {
     text-transform: uppercase;
   }
@@ -529,7 +559,7 @@ h1 {
   .circle {
     display: none;
   }
-  
+
   .container {
     display: grid;
   }
