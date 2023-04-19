@@ -211,9 +211,12 @@ body {
   cursor: pointer;
 }
 
+#head{
+  cursor: pointer;
+}
+
 #ask {
   display: grid;
-
   font-family: 'Cooper Black', Arial, Helvetica, sans-serif;
   color: black;
   background-color: white;
@@ -414,8 +417,7 @@ h1 {
 
   #why,
   #thanks,
-  #ask,
-  .ask {
+  #ask {
     display: none;
     cursor: pointer;
   }
@@ -539,8 +541,7 @@ h1 {
 
   #why,
   #thanks,
-  #ask,
-  .ask {
+  #ask {
     display: none;
     cursor: pointer;
   }
