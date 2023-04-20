@@ -48,6 +48,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
+  /* grid-template-columns: repeat(12, 1fr); */
 }
 
 #nav {
@@ -87,7 +88,8 @@ body {
 
 .title-large {
   font-family: 'Cooper Black', Arial, Helvetica, sans-serif;
-  font-size: 9rem;
+  /* font-size: 9.5rem; */
+  font-size: 12rem;
   font-style: normal;
   text-transform: uppercase;
   align-items: center;
@@ -115,7 +117,7 @@ body {
   width: auto;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   /* grid-template-rows: .50fr 2fr 1.50fr; */
   padding: 2.2rem;
   object-fit: contain;
@@ -139,8 +141,8 @@ body {
 
 .column-1 {
   float: left;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
   padding: 0rem;
   z-index: 2;
   overflow: hidden;
@@ -155,8 +157,8 @@ body {
 
 .column-2 {
   float: left;
-  grid-column-start: 3;
-  grid-column-end: 10;
+  grid-column-start: 6;
+  grid-column-end: 11;
   z-index: 2;
   overflow: scroll;
   color: rgb(33, 33, 33);
@@ -417,7 +419,7 @@ h1 {
 
 @media screen and(max-width: 1080) {
   .title-large {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 
   .column-2 {
@@ -432,7 +434,7 @@ h1 {
 
 @media screen and (max-width: 950px) {
   .title-large {
-    font-size: 400%;
+    font-size: 5.4rem;
   }
 
   #about {
@@ -465,7 +467,11 @@ h1 {
 
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:690px) {
+  .title-large{
+    font-size: 3.5rem;
+  }
+
   .circle {
     display: none;
   }
@@ -477,7 +483,7 @@ h1 {
 
 @media screen and (max-width:550px) {
   .title-large {
-    font-size: 3.6rem;
+    font-size: 3.3rem;
     padding: 15%;
   }
 
@@ -533,7 +539,7 @@ h1 {
   }
 
   .title-large {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     padding: 10%;
   }
 
