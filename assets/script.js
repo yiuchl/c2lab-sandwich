@@ -13,12 +13,12 @@ function renderItems(collection) {
             const itemDetails =
                 `
                 <div class="container">
-                <div class="column-1">
-                    <h1 class="name" style="font-weight: 600;">${item.Forename}</h1>
-                </div>
-			    <div class="column-2">
-                    <p class="response">${item.Response}</p>
-                </div> 
+                    <div class="column-1">
+                        <h1 class="name" style="font-weight: 600;">${item.Forename}</h1>
+                    </div>
+			        <div class="column-2">
+                        <p class="response">${item.Response}</p>
+                    </div> 
                 </div>
 			    `
             listItem.insertAdjacentHTML('beforeend', itemDetails)
@@ -194,7 +194,7 @@ function dragElement(elmnt) {
 }
 
 // COLOR RANDOMIZER BUTTON
-let myColors = ['red', 'deeppink', 'orangered', 'orange', 'green', 'olivedrab', 'blue', 'darkviolet', 'mediumslateblue', 'black'];
+let myColors = ['red', 'deeppink', 'orangered', 'orange', 'green', 'olivedrab', 'blue', 'darkviolet', 'mediumslateblue', 'rgb(33, 33, 33)'];
 
 $('button').click(function () {
     let randomColor = myColors[Math.trunc(Math.random() * myColors.length)];
