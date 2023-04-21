@@ -89,7 +89,8 @@ body {
 .title-large {
   font-family: 'Cooper Black', Arial, Helvetica, sans-serif;
   /* font-size: 9.5rem; */
-  font-size: 13em;
+  font-size: 9.8em;
+  letter-spacing: 10px;
   font-style: normal;
   text-transform: uppercase;
   align-items: center;
@@ -131,7 +132,6 @@ body {
 /* #pls {
   background-color: red;
 }
-
 
 #pls div{
   border-radius: calc(13px - 10px);
@@ -260,7 +260,7 @@ body {
   background-color: white;
   padding: 5%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   border: 0.5em solid rgb(33, 33, 33);
   border-left: none;
   border-right: none;
@@ -434,7 +434,8 @@ h1 {
 
 @media screen and (max-width: 950px) {
   .title-large {
-    font-size: 5.4rem;
+    font-size: 5.3rem;
+    /* padding: 4%; */
   }
 
   #about {
@@ -447,10 +448,22 @@ h1 {
   }
 
   #burst-12 {
-    top: 1.59%;
-    left: 5.4%;
+    top: 2.5%;
+    /* top: auto; */
+    left: 5.6%;
+    /* top: 0.5%; */
+    /* left: 5.4%; */
     /* top: 3.3%;
     left: 86%; */
+    transform: rotate(-20deg);
+  }
+
+  #ask {
+    border-bottom: 0.25em solid rgb(33, 33, 33);
+  }
+
+  #head {
+    padding: 4%;
   }
 
   #why,
@@ -476,17 +489,27 @@ h1 {
     grid-column-end: 10;
     overflow: visible;
     flex-direction: column;
+    font-size: 1.6rem;
   }
 
   .column-2 {
     display: table;
-    grid-column-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width:820) {
+  .title-large {
+    font-size: 4em;
+    padding: 5%;
   }
 }
 
 @media screen and (max-width:690px) {
-  .title-large{
-    font-size: 3.5rem;
+  .title-large {
+    font-size: 4.6em;
   }
 
   .circle {
@@ -494,14 +517,55 @@ h1 {
   }
 
   .container {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+  }
+
+  #burst-12 {
+    top: 0.6%;
+  }
+
+  #ask {
+    display: flex;
+  }
+
+  .footer {
+    padding: 1.5rem;
+  }
+
+  #border {
+    margin-bottom: 2.2%;
   }
 }
 
 @media screen and (max-width:550px) {
   .title-large {
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     padding: 15%;
+    display: flex;
+  }
+
+  .topnav{
+    align-content: flex-start;
+  }
+
+  #one {
+    font-size: 1.96rem;
+    padding:5%;
+    margin: 0;
+  }
+
+  #eat {
+    font-size: 1.85rem;
+    padding:5%;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  #head h1 {
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    word-wrap: break-word;
   }
 
   .container {
@@ -545,6 +609,15 @@ h1 {
     margin: 0;
   }
 
+  #left-about {
+    padding: 15%;
+  }
+
+  #why div {
+    /* padding-top:3.5%; */
+    padding-top: 4%;
+  }
+
   .topnav a {
     display: flex;
     text-align: center;
@@ -557,8 +630,11 @@ h1 {
   }
 
   .title-large {
-    font-size: 2.6rem;
+    font-size: 3rem;
     padding: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #burst-12 {
@@ -624,7 +700,10 @@ h1 {
   }
 
   .circle {
-    display: none;
+    display: block;
+    top: 1.8%;
+    left: 0.3em;
+    transform: rotate(-20deg) scale(0.5);
   }
 
   .container {
@@ -636,12 +715,13 @@ h1 {
     grid-column-end: 10;
     overflow: visible;
     flex-direction: column;
-    grid-column-start: 1;
+    grid-column-start: 2;
   }
 
   .column-2 {
     display: table;
-    grid-column-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 12;
     font-size: 1.2rem;
   }
 
@@ -650,7 +730,58 @@ h1 {
   }
 
   #ask {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
     padding: 3%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .title-large {
+    font-size: 2.8rem;
+  }
+
+  .footer {
+    padding: 1.5rem;
+  }
+
+  #times {
+    padding-left: 2.3rem;
+    padding-right: 2.2rem;
+    text-align: center;
+  }
+
+  #thanks {
+    padding: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.75rem;
+  }
+
+  #border {
+    margin-bottom: 2.2%;
+  }
+
+  #ask {
+    display: flex;
+  }
+}
+
+@media screen and (max-width:375px) {
+  #border {
+    margin-bottom: 2.2%;
+  }
+
+  .title-large {
+    font-size: 2.4rem;
+  }
+
+  .circle {
+    top: 5%;
+    left: 50%;
+  }
+
+  .circle:hover {
+    transform: rotate(-330deg);
+    transition: 1000ms linear;
   }
 }
