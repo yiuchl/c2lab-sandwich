@@ -420,13 +420,6 @@ h1 {
   border-bottom: 12.5px solid rgb(33, 33, 33);
 }
 
-.conversation-container--Individual .bigBox:first-child{
-  background: white;
-  border-radius: 50px 50px 50px 50px;
-  border-top: 0;
-  border-bottom: 12.5px solid rgb(33, 33, 33);
-}
-
 .conversation-container--A{
   background: rgb(33, 33, 33);
     border-top: 25px solid;
