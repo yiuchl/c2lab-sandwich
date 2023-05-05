@@ -25,13 +25,13 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb{
-  background-color: red;
+  background-color: transparent;
   border-radius: 1em;
 }
 
 /* Handle on hover */
 html::-webkit-scrollbar-thumb:hover {
-  background: rgb(214, 0, 0); 
+  background: red; 
 }
 
 html {
@@ -42,13 +42,14 @@ html {
 }
 
 #border {
-  border: 1em solid rgb(33, 33, 33);
-  border-radius: 2em;
+  border: 25px solid rgb(33, 33, 33);
+  border-radius: 60px;
   margin: 0;
   margin-bottom: 1.6em;
   align-content: center;
   display: flex;
   box-sizing: border-box;
+  background-color: white;
 }
 
 body {
@@ -105,7 +106,7 @@ body {
   font-family: 'Cooper Black', Arial, Helvetica, sans-serif;
   /* font-size: 9.5rem; */
   font-size: 9.8em;
-  letter-spacing: 10px;
+  letter-spacing: 9px;
   font-style: normal;
   text-transform: uppercase;
   align-items: center;
@@ -133,25 +134,11 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /* grid-template-rows: .50fr 2fr 1.50fr; */
   padding: 2.2rem;
   object-fit: contain;
   box-sizing: border-box;
   font-size: 1.5rem;
-
-  /* border: 2em solid rgb(33, 33, 33);
-  border-bottom: 1em;  */
 }
-
-/* #pls {
-  background-color: red;
-}
-
-#pls div{
-  border-radius: calc(13px - 10px);
-  margin: 0;
-  background-color: white;
-} */
 
 .column-1 {
   float: left;
@@ -163,10 +150,6 @@ body {
   color: rgb(33, 33, 33);
   font-family: 'Schibsted Grotesk', Arial, Helvetica, sans-serif;
   background-color: white;
-
-  /* border: 0 solid white;
-  border-right: 0;
-  border-radius: 10px; */
 }
 
 .column-2 {
@@ -178,9 +161,6 @@ body {
   color: rgb(33, 33, 33);
   font-family: 'Schibsted Grotesk', Arial, Helvetica, sans-serif;
   background-color: white;
-
-  /* border: 0 solid white;
-  border-radius: 10px; */
 }
 
 .column-1 h1 {
@@ -219,6 +199,7 @@ body {
 #about {
   z-index: 9;
   color: rgb(33, 33, 33);
+  /* color:orangered; */
   font-family: 'Schibsted Grotesk', Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
@@ -267,18 +248,24 @@ body {
   cursor: pointer;
 }
 
+.ask{
+  background: rgb(33, 33, 33);
+}
+
 #ask {
   display: grid;
   font-family: 'Cooper Black', Arial, Helvetica, sans-serif;
   color: rgb(33, 33, 33);
-  background-color: white;
+  /* color:orangered; */
   padding: 5%;
   text-align: center;
   font-size: 3rem;
-  border: 0.25em solid rgb(33, 33, 33);
+  border: 12.5px solid rgb(33, 33, 33);
   border-left: none;
   border-right: none;
   border-top: none;
+  background: white;
+  /* border-radius: 0 0 50px 50px; */
 }
 
 .bolded {
@@ -416,9 +403,61 @@ h1 {
   font-family: 'Schibsted Grotesk', Arial, Helvetica, sans-serif;
 }
 
+/* .conversation-container--Individual .bigBox{
+  border: 2px solid red;
+} */
+
+.conversation-container--Individual{
+  /* border-top: 25px solid; */
+  /* border-bottom: 25px solid; */
+  background-color: rgb(33, 33, 33);
+}
+
+.conversation-container--Individual .bigBox{
+  background: white;
+  border-radius: 50px 50px 50px 50px;
+  border: 12.5px solid rgb(33, 33, 33);
+}
+
+.conversation-container--A{
+  background: rgb(33, 33, 33);
+    border-top: 25px solid;
+    border-bottom: 25px solid;
+}
+
+.conversation-container--A .convo{
+  background: white;
+}
+
+.conversation-container--A .convo:first-child{
+  border-radius: 50px 50px 0 0 ;
+}
+
+.conversation-container--A .convo:last-child{
+  border-radius: 0 0 50px 50px;
+  padding-bottom: 2rem;
+}
+
+.conversation-container--B{
+  background: rgb(33, 33, 33);
+}
+
+.conversation-container--B .convo{
+  background: white;
+}
+
+.conversation-container--B .convo:first-child{
+  border-radius: 50px 50px 0 0 ;
+}
+
+.conversation-container--B .convo:last-child{
+  border-radius: 0 0 50px 50px;
+}
+
+
 @media screen and (max-width: 1220px) {
   #about {
-    top: 4%;
+    top: 265px;
   }
 
   #burst-12 {
@@ -453,7 +492,7 @@ h1 {
   }
 
   #about {
-    top: 10rem;
+    top: 298px;
   }
 
   .circle {

@@ -2,16 +2,18 @@
 function renderItems(collection) {
     // out put to html page and make data look NICE 
     console.log("data records in your JSON:", collection);
+    let initialType
+
     collection.forEach(
         function getItemProperty(item) {
-            console.log(item.Forename);
-            console.log(item.Response);
-            console.log(item.Conversation);
-
             const collectionList = document.getElementById('collection')
+
+            let conversationBox
+
             const listItem = document.createElement('div')
             const itemDetails =
                 `
+               <div class="bigBox">
                 <div class="container">
                     <div class="column-1">
                         <h1 class="name" style="font-weight: 600;">${item.Forename}</h1>
@@ -20,10 +22,23 @@ function renderItems(collection) {
                         <p class="response">${item.Response}</p>
                     </div> 
                 </div>
+               </div>
 			    `
             listItem.insertAdjacentHTML('beforeend', itemDetails)
             collectionList.appendChild(listItem)
 
+            if (initialType == item.Conversation) {
+                document.querySelector(`.conversation-container--${item.Conversation}`).appendChild(listItem)
+            } else {
+                initialType = item.Conversation
+                conversationBox = document.createElement('div')
+                conversationBox.classList.add(`conversation-container--${item.Conversation}`)
+                collectionList.appendChild(conversationBox)
+                conversationBox.appendChild(listItem)
+            }
+
+
+            // get const convA
             if (item.Conversation) {
                 listItem.classList.add("convo")
             }
@@ -41,6 +56,8 @@ function renderItems(collection) {
                 listItem.classList.add("convoStatusInd");
             }
         });
+
+
 }
 
 // Fetch gets your JSON file.
@@ -52,7 +69,6 @@ fetch("./assets/data.json")
         renderItems(collection);
         // renderItems(collection.reverse());
     });
-
 
 // JAVASCRIPT ELEMENTS:
 //      1. the footer changes based on the current month/year
@@ -118,8 +134,6 @@ function dragElement(elmnt) {
     function dragMouseDown(e) {
         e = e || window.event;
         e.preventDefault();
-
-        // console.log("function dragMouseDown(e)");
 
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
