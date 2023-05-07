@@ -21,17 +21,17 @@
 
 /* Handle */
 html::-webkit-scrollbar {
-  background: transparent; 
+  background: transparent;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   background-color: transparent;
   border-radius: 1em;
 }
 
 /* Handle on hover */
 html::-webkit-scrollbar-thumb:hover {
-  background: red; 
+  background: red;
 }
 
 html {
@@ -248,9 +248,12 @@ body {
 
 #head {
   cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.ask{
+.ask {
   background: rgb(33, 33, 33);
 }
 
@@ -409,51 +412,51 @@ h1 {
   border: 2px solid red;
 } */
 
-.conversation-container--Individual{
+.conversation-container--Individual {
   /* border-top: 25px solid; */
   /* border-bottom: 25px solid; */
   background-color: rgb(33, 33, 33);
 }
 
-.conversation-container--Individual .bigBox{
+.conversation-container--Individual .bigBox {
   background: white;
   border-radius: 50px 50px 50px 50px;
   border-top: 12.5px solid rgb(33, 33, 33);
   border-bottom: 12.5px solid rgb(33, 33, 33);
 }
 
-.conversation-container--A{
+.conversation-container--A {
   background: rgb(33, 33, 33);
-    border-top: 25px solid;
-    border-bottom: 25px solid;
+  border-top: 25px solid;
+  border-bottom: 25px solid;
 }
 
-.conversation-container--A .convo{
+.conversation-container--A .convo {
   background: white;
 }
 
-.conversation-container--A .convo:first-child{
-  border-radius: 50px 50px 0 0 ;
+.conversation-container--A .convo:first-child {
+  border-radius: 50px 50px 0 0;
 }
 
-.conversation-container--A .convo:last-child{
+.conversation-container--A .convo:last-child {
   border-radius: 0 0 50px 50px;
   padding-bottom: 2rem;
 }
 
-.conversation-container--B{
+.conversation-container--B {
   background: rgb(33, 33, 33);
 }
 
-.conversation-container--B .convo{
+.conversation-container--B .convo {
   background: white;
 }
 
-.conversation-container--B .convo:first-child{
-  border-radius: 50px 50px 0 0 ;
+.conversation-container--B .convo:first-child {
+  border-radius: 50px 50px 0 0;
 }
 
-.conversation-container--B .convo:last-child{
+.conversation-container--B .convo:last-child {
   border-radius: 0 0 50px 50px;
 }
 
