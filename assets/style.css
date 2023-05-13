@@ -818,9 +818,6 @@ h1 {
 }
 
 @media screen and (max-width:414px) {
-  .title-large {
-    font-size: 2.8rem;
-  }
 
   .footer {
     padding: 1.5rem;
@@ -845,9 +842,7 @@ h1 {
   #ask {
     display: flex;
   }
-}
 
-@media screen and (max-width:390px) {
   #nav {
     z-index: 0;
     position: static;
@@ -869,25 +864,5 @@ h1 {
 
   .circle {
     display: none;
-  }
-}
-
-@media screen and (max-width:375px) {
-  #border {
-    margin-bottom: 2.2%;
-  }
-
-  .title-large {
-    font-size: 2rem;
-  }
-
-  .circle {
-    top: 5%;
-    left: 50%;
-  }
-
-  .circle:hover {
-    transform: rotate(-330deg);
-    transition: 1000ms linear;
   }
 }
